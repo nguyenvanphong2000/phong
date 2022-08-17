@@ -8,10 +8,11 @@ int main(){
 	{
 		if(n%i==0)
 		{
-			printf("%d\t",i);
-	        s=s+i;
-        }
+			s=s+i;
+			printf("%d\t",i); 
+        }else
+		{
+		}
     }
 		printf("\ntong cac uoc cua n la: %d",s);
-	
 }
