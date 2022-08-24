@@ -9,11 +9,18 @@ int main()
 	{
 		scanf("%d",&A[i]);
 	}
-	for(int i=n-1;i<n;i--)
+	bool f=false;
+	for(int i=n-1;i>=0;i--)
 	{
-		if(A[i]%2!=0)
+		if(A[n]%2==1)
 		{
-			printf("so le cuoi cung trong mang la:",A[i]);
+			printf("so le cuoi cung la %d",A[i]);
+			f =true;
+			break;
 		}
+	}
+	if(f==false)
+	{
+		printf("khong co so le nao trong mang");
 	}
 }
