@@ -7,8 +7,8 @@ int main(){
 	while (i<=n){
 		//yes
 		if (n%i==0){
-			printf("%d\t",i);
-		}
+			printf("\nnuoc so cua n la:%d",i);
+		} 
 		i++;
 		
 }

@@ -6,8 +6,9 @@ int main(){
 	 i=1;
 	while(i<n){
 	    //yes
-		printf("%d\t",i);
+		printf("\nso le la:%d",i);
 		i+=2;
+		
 	}
 	    //no
 }
