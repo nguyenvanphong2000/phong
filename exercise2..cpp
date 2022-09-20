@@ -1,9 +1,12 @@
 #include <stdio.h>
 
-void mang(int arr[],int n)
+void mang(int arr[],int &n)
 {
-	for(int i=0;i<n-1;i++)
-	scanf("%d",&arr[i]);
+	for(int i=0;i<=n-1;i++)
+	{
+	  printf("nhap arr[%d]",i);
+	  scanf("%d",&arr[i]);
+    }
 }
 void HoanVi(int arr[],int n)
 {
@@ -13,6 +16,11 @@ void HoanVi(int arr[],int n)
 		arr[i] = arr[n - i - 1];
 		arr[n - i - 1] = temp;
 	}
+	  printf("\nmang dao nguoc la:");
+	for(int i=0;i<n;i++)
+	{
+		printf("%d\t",arr[i]);
+	 } 
 }
 int main(void)
 {
@@ -21,6 +29,7 @@ int main(void)
 	scanf("%d",&n);
 	int arr[n];
 	mang(arr,n);
-	printf("mang vua nhap:%d",HoanVi(arr,n));
+	HoanVi(arr,n);
+	return 0;
 }
 

@@ -4,7 +4,7 @@ int main(){
 	printf("nhap n=");
 	scanf("%d",&n);
 	float sum;
-	for(i=1;i<=n;i++)
+	for(int i=1;i<=n;i++)
 	{
 		sum=sum+1.0/i;
 	}
