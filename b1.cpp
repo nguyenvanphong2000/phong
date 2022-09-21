@@ -8,21 +8,15 @@ int main()
     {
      scanf("%d",&A[i]);
     }
-	int tbL ,tongL=0;
+	double tbL ,tongL=0;
 		 demL=0;
 		for(int i=0;i<n;i++)
-		{
 		  if(A[i]%2!=0)
 		  {
 		  	tongL=tongL+A[i];
 		  	demL++;
 		  }
-	    }
-	    if(demL>0)
-	    {
-		double  tbL=double(tongL/demL);
-	      printf("TBC so le la: %.3lf",tbL);
-        }else{
-        	printf("khong co so le nao trong mang");
-		}
+		  tbL=double(tongL/demL);
+	printf("TBC so le la: %.3lf",tbL);
+
 }
